@@ -104,7 +104,7 @@
     // Charger les données initiales depuis le backend
     async function loadGraphData() {
       try {
-        const res = await fetch(`api/data-tseries`);
+        const res = await fetch(`/data-tseries`);
         const saved = await res.json();
 
         subscriberChart.data.labels = saved.labels || [];
